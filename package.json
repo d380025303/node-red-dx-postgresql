@@ -5,11 +5,9 @@
     "name": "DX",
     "url": "https://github.com/d380025303"
   },
-  {
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/d380025303/node-red-dx-postgresql.git"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d380025303/node-red-dx-postgresql.git"
   },
   "keywords": [
     "node-red",
