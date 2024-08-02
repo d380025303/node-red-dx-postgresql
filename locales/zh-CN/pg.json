@@ -16,6 +16,10 @@
       "idleTimeout": "空闲超时时间",
       "connectionTimeout": "连接超时时间"
     },
+    "outputFormat": {
+      "single": "对象",
+      "mul": "数组"
+    },
     "conn": {
       "connect": "已连接",
       "disconnect": "未连接"
