@@ -1,0 +1,28 @@
+{
+  "pg": {
+    "label": {
+      "name": "名称",
+      "server": "服务",
+      "outputFormat": "输出格式",
+      "query": "查询",
+      "host": "主机",
+      "port": "端口",
+      "dbname": "数据库名",
+      "user": "用户",
+      "password": "密码",
+      "poolConfig": "连接池配置",
+      "dbConfig": "数据库配置",
+      "max": "最大保留数",
+      "idleTimeout": "空闲超时时间",
+      "connectionTimeout": "连接超时时间"
+    },
+    "conn": {
+      "connect": "已连接",
+      "disconnect": "未连接"
+    },
+    "error": {
+      "no_config": "未配置服务",
+      "no_query": "查询参数为空"
+    }
+  }
+}

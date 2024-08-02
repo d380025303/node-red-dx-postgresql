@@ -1,0 +1,28 @@
+<script type="text/html" data-help-name="pg">
+<p>
+    The node-red-dx-postgresql node is used to query/insert into PostgresSQL.
+</p>
+
+<h3>Input</h3>
+<p><code>msg.query</code> is used to dynamically receive SQL statements; if the "query" node has already been configured, <code>msg.query</code> will not take effect.</p>
+<p><code>msg.queryParams</code> is used to dynamically set an array of input parameters.</p>
+<p>Example</p>
+<p>
+    msg.query = "'INSERT INTO users(name, email) VALUES(<b>$1</b>, <b>$2</b>) RETURNING *'"
+    msg.queryParams = ['brianc', 'brian.m.carlson@gmail.com']
+</p>
+<h3>Outputs</h3>
+<p>The output will be placed in the <code>msg.payload</code> node.</p>
+<p>When the output format is set to "multiple", it will output as an array; when the output format is set to "single", it will output as an object (it will still be an array if multiple rows are returned).</p>
+<p>If error occurs, the error will be output to port 2, and port 1 will not proceed.</p>
+</script>
+
+
+<script type="text/html" data-help-name="pgConfig">
+    <p>
+        database config
+    </p>
+    <p>max: maximum number of clients the pool should contain</p>
+    <p>idleTimeout: number of milliseconds a client must sit idle in the pool and not be checked out efore it is disconnected from the backend and discarded</p>
+    <p>connectionTimeout: number of milliseconds to wait before timing out when connecting a new client</p>
+</script>

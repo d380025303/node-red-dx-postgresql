@@ -1,0 +1,24 @@
+{
+  "name" : "node-red-dx-postgresql",
+  "version": "0.0.1",
+  "author": {
+    "name": "DX",
+    "url": "https://github.com/d380025303"
+  },
+  "keywords": [
+    "node-red",
+    "nodered",
+    "postgres",
+    "postgresql",
+    "pg"
+  ],
+  "dependencies": {
+    "pg": "^8.12.0"
+  },
+  "license": "Apache-2.0",
+  "node-red" : {
+    "nodes": {
+      "pg": "pg.js"
+    }
+  }
+}

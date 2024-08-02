@@ -1,0 +1,28 @@
+<script type="text/html" data-help-name="pg">
+	<p>
+		node-red-dx-postgresql 是用于查询/插入PostgresSQL的节点
+	</p>
+
+	<h3>输入</h3>
+	<p><code>msg.query</code>用于动态接收sql语句，如果"查询"节点已经配置，<code>msg.query</code>将不会生效</p>
+    <p><code>msg.queryParams</code>用于动态设置输入参数的数组</p>
+    <p>示例</p>
+    <p>
+        msg.query = "'INSERT INTO users(name, email) VALUES(<b>$1</b>, <b>$2</b>) RETURNING *'"
+        msg.queryParams = ['brianc', 'brian.m.carlson@gmail.com']
+    </p>
+	<h3>输出</h3>
+    <p>输出将输出到<code>msg.payload</code>节点中</p>
+	<p>当输出格式设置为"多个"，将会输出为数组；当输出格式设置为"单个"，将会输出为对象（如果返回了多行，还是为数组）；</p>
+    <p>如果发生错误，会将错误输出到端口2中，端口1将不会执行</p>
+</script>
+
+
+<script type="text/html" data-help-name="pgConfig">
+    <p>
+        配置数据库连接
+    </p>
+    <p>最大保留数：连接池最大保留多少连接</p>
+    <p>空闲超时时间：客户端在连接池中空闲的毫秒数，若在此期间未被使用，则会从后端断开连接并被丢弃。默认值是10000毫秒（即10秒）。将此值设置为0可禁用空闲客户端的自动断开连接功能。</p>
+    <p>连接超时时间：在尝试建立新客户端连接时，等待的毫秒数，超过这个时间则认为连接超时。</p>
+</script>

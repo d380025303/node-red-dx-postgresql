@@ -1,0 +1,33 @@
+{
+  "pg": {
+    "label": {
+      "name": "Name",
+      "server": "Server",
+      "outputFormat": "Output Format",
+      "query": "Query",
+      "host": "Host",
+      "port": "Port",
+      "dbname": "Database",
+      "user": "User",
+      "password": "Password",
+      "poolConfig": "Pool Config",
+      "dbConfig": "Database Config",
+      "max": "Maximum Contain",
+      "idleTimeout": "Idle Timeout",
+      "connectionTimeout": "Connection Timeout",
+      "checkButton": "Test Connection"
+    },
+    "outputFormat": {
+      "single": "Single",
+      "mul": "Multiple"
+    },
+    "conn": {
+      "connect": "Connect",
+      "disconnect": "Disconnect"
+    },
+    "error": {
+      "no_config": "Server Config Not Set",
+      "no_query": "Empty Query"
+    }
+  }
+}
